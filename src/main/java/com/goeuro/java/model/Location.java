@@ -16,23 +16,23 @@ public class Location {
 	private @Nullable Object key;
 	private String name;
 	private String fullName;
-	
+
 	@SerializedName("iata_airport_code")
 	private @Nullable String iataAirportCode;
 	private String type;
 	private String country;
-	
+
 	@SerializedName("geo_position")
 	private GeoPosition geoPosition;
 	private long locationId;
 	private boolean inEurope;
 	private String countryCode;
 	private boolean coreCountry;
-	private @Nullable  float distance;
+	private @Nullable float distance;
 
-	public Location(long id, Object key, String name, String fullName, String iataAirportCode, 
-			String type, String country, GeoPosition geoPosition, long locationId, boolean inEurope,
-			String countryCode, boolean coreCountry) {
+	public Location(long id, Object key, String name, String fullName, String iataAirportCode, String type,
+			String country, GeoPosition geoPosition, long locationId, boolean inEurope, String countryCode,
+			boolean coreCountry) {
 		super();
 		this.id = id;
 		this.key = key;
@@ -47,7 +47,7 @@ public class Location {
 		this.countryCode = countryCode;
 		this.coreCountry = coreCountry;
 	}
-	
+
 	public long getId() {
 		return id;
 	}
@@ -154,12 +154,12 @@ public class Location {
 
 	@Override
 	public String toString() {
-		return String.format("id: %d,\nname: %s,\nfullName: %s,\niata_airport_code: %s,\ntype: %s,\n" +
-				"country: %s,\nlocationId: %d,\ninEurope?: %b,\ncountryCode: %b,\ncoreCountry?: %b,\n" + 
-				"distance: %f,\nGeo position: %s\n",
-				id, getName(), getFullName(), getIataAirportCode(), getType(), 
-				getCountry(), getLocationId(), isInEurope(), getCountryCode(), isCoreCountry(), 
-				getDistance(), getGeoPosition());
+		return String.format(
+				"id: %d,\nname: %s,\nfullName: %s,\niata_airport_code: %s,\ntype: %s,\n"
+						+ "country: %s,\nlocationId: %d,\ninEurope?: %b,\ncountryCode: %b,\ncoreCountry?: %b,\n"
+						+ "distance: %f,\nGeo position: %s\n",
+				id, getName(), getFullName(), getIataAirportCode(), getType(), getCountry(), getLocationId(),
+				isInEurope(), getCountryCode(), isCoreCountry(), getDistance(), getGeoPosition());
 	}
 
 }

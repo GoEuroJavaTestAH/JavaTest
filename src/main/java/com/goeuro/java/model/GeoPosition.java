@@ -9,9 +9,9 @@ package com.goeuro.java.model;
 public class GeoPosition {
 	private float latitude;
 	private float longitude;
-	
+
 	/**
-	 * Constructor 
+	 * Constructor
 	 * 
 	 * @param latitude
 	 * @param longitude
@@ -21,7 +21,7 @@ public class GeoPosition {
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
-	
+
 	public float getLatitude() {
 		return latitude;
 	}
