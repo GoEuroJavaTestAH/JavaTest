@@ -1,0 +1,4 @@
+# target folder
+target/
+# generated csv file for cities
+*.csv
